@@ -1,13 +1,17 @@
 #Open AI -> Cookbook for vide understanding and response generation! 
 #Using Open AI / GPT 4 to send a video by dividing the video into multiple frames, sending multiple frames to Open AI with a prompt to generate output, and then text to speech conversion again using the open - ai key 
 # Main Next Steps to Think about ? :
+# 0. Figure out where we need to add out open AI API key, and how much that would cost!
+# Do a trial with a random video and see how the output looks like! -> And see it works before going on to live stream! 
+# Once it works with a random video -> Capture the live stream and then send the frames to OpenAI:
+    # How many seconds of video can it process at a time?
+    # Would there be a lag in response time? -> How much would the lag be and can I reduce it in anyway ? 
+    # How much would it cost to process a say 1 hour video?
+#----------------------------------------------------------
 # 1. Add access to live stream and then send the frames to OpenAI
 # 2. Convert incoming audio to text and send it to the model as a prompt!
-# 3. Figure out where we need to add out open AI API key, and how much that would cost!
-# 4. Do I want to use anything open source instaed of OpenAI for certain sections such as the text to speech conversion and speech to text conversion?
-
+# 3. Do I want to use anything open source instaed of OpenAI for certain sections such as the text to speech conversion and speech to text conversion?
 from IPython.display import display, Image, Audio
-
 import cv2  # We're using OpenCV to read video, to install !pip install opencv-python
 import base64
 import time
